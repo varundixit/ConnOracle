@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Instance>
+	<Connection>
+		<username>hr</username>
+		<password>oracle</password>
+		<hostname>192.168.19.128</hostname>
+		<port>1521</port>
+		<service_name>orcl</service_name>
+	</Connection>
+	<Sqls>
+		<Sql OutFileName="Countries.csv">select COUNTRY_ID, COUNTRY_NAME, REGION_ID from COUNTRIES</Sql>
+		<Sql OutFileName="Departments.csv">select DEPARTMENT_ID, DEPARTMENT_NAME, MANAGER_ID, LOCATION_ID from DEPARTMENTS</Sql>
+		<Sql OutFileName="Emp_Details_View.csv">select EMPLOYEE_ID ,JOB_ID ,MANAGER_ID ,DEPARTMENT_ID ,LOCATION_ID ,COUNTRY_ID ,
+		FIRST_NAME ,LAST_NAME ,SALARY ,COMMISSION_PCT ,DEPARTMENT_NAME ,JOB_TITLE ,CITY ,
+		STATE_PROVINCE ,COUNTRY_NAME ,REGION_NAME from EMP_DETAILS_VIEW</Sql>
+	</Sqls>
+</Instance>
